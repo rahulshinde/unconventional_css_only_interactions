@@ -1,0 +1,64 @@
+/*General Styles*/
+body{
+  text-align: center;
+  font-size: 22px;
+}
+
+section{
+  padding-top: 3rem;
+  border-top: 1px dotted;
+  margin-bottom: 3rem;
+}
+
+
+.hover_container{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.invisible{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.hover_container:hover .invisible{
+  opacity: 1;
+}
+
+.checkbox_container{
+  display: inline-block;
+}
+
+.checkbox_container input,
+.checkbox_image{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.checkbox_container input{
+  outline: 1px solid;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox_container input:checked{
+  background-color: #000;
+}
+
+.checkbox_image{
+  opacity: 0;
+}
+
+.checkbox_container input:checked + .checkbox_image{
+  opacity: 1;
+}
